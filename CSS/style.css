@@ -1,67 +1,156 @@
-.navbar{
-    background-color: #0080ff;
-    padding: 20px;
-    text-align: center;
-}
-.navbar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.navbar a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 15px;
-    transition: color 0.6s;
-}
-.navbar a:hover{
-    color: #b9f1ff;
+/* ======== GERAL ======== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* ======== SEÇÃO INICIAL COM FUNDO PARALLAX ======== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background-color: #0080ff;
+  backdrop-filter: blur(10px);
+}
+.navbar .nav-link,
+.navbar-brand {
+  color: white !important;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+  color: #000000 !important;
+}
+
+/* ======== INÍCIO (HERO) ======== */
 #inicio {
-  position: relative;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-
-  /* Fundo fixo */
-  background-image: url("../fotos/inicio.jpg"); /* 🖼️ altere o caminho conforme sua pasta */
+  background-image: url("/pavanelliautosocorro-main/fotos/inicio.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
-  /* Parallax */
   background-attachment: fixed;
-  transform: translateZ(0);
-  will-change: background-position;
+  /* ...resto do estilo... */
 
-  /* Tamanho e alinhamento */
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #fff;
 }
-
-/* Camada escura para leitura */
 #inicio::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.459);
-  z-index: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
-
-/* Garante que o texto fique acima da camada escura */
 #inicio * {
   position: relative;
   z-index: 1;
 }
+#inicio .btn-primary {
+  background-color: #0080ff;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+#inicio .btn-primary:hover {
+  background-color: transparent;
+}
 
-.section sobre {
-    background-color: #000000;
+/* ======== SOBRE ======== */
+.sobre {
+  background: #f4f4f4;
+}
+.sobre h1 {
+  font-weight: 800;
+}
+.sobre h2 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ======== SERVIÇOS ======== */
+.servicos h1 {
+  font-weight: 800;
+}
+.servicos .card {
+  border: none;
+  box-shadow: 0px 5px 17px rgba(0,0,0,0.15);
+  transition: 0.4s;
+}
+.servicos .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+}
+
+/* ======== GALERIA ======== */
+.fotos img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.fotos img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+}
+
+/* ======== CONTATO ======== */
+.contact {
+  background: #000;
+  color: #fff;
+}
+.contact .btn-primary {
+  background-color: #0080ff;
+  border: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.contact .btn-primary:hover {
+  background-color: #00bfff;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 8px) {
+  #inicio {
+    background-attachment: scroll;
+  }
+  .navbar-brand {
+    font-size: 9px;
+  }
+}
+@media (max-width: 576px) {
+  .servicos .card {
+    margin-bottom: 4px;
+  }
+}
+
+/* Tornar o botão maior, fixo e com animação */
+.whatsApp {
+  position: relative; /* fixa na tela */
+  bottom: 20px;    /* distância do rodapé */
+  z-index: 1000;  /* fica acima de outros elementos */
+}
+
+/* Efeito ao passar o mouse */
+.whatsApp a:hover {
+  background-color: transparent;       /* fica transparente */
+  border-color: #ffffff; /* cresce um pouco */
 }
