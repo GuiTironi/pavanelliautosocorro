@@ -32,7 +32,7 @@ body {
 
 /* ======== INÍCIO (HERO) ======== */
 #inicio {
-  background-image: url("/pavanelliautosocorro-main/fotos/inicio.jpg");
+  background-image: url("/pavanelliautosocorro-main/fotos/WhatsApp\ Image\ 2025-11-19\ at\ 10.03.44.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -74,22 +74,28 @@ body {
 
 /* ======== SOBRE ======== */
 .sobre {
-  background: #f4f4f4;
+  background: #2b2b2b;
 }
 .sobre h1 {
+  color: #0080ff;
   font-weight: 800;
 }
 .sobre h2 {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
 }
 
 /* ======== SERVIÇOS ======== */
+.servicos {
+  background: #2b2b2b;
+}
 .servicos h1 {
+  color:#0080ff;
   font-weight: 800;
 }
 .servicos .card {
+  background-color: #ffffff;
   border: none;
   box-shadow: 0px 5px 17px rgba(0,0,0,0.15);
   transition: 0.4s;
@@ -100,6 +106,14 @@ body {
 }
 
 /* ======== GALERIA ======== */
+.fotos h1 {
+  color: #0080ff;
+  font-weight: 800;
+}
+.fotos {
+  background:  #2b2b2b;
+  padding: 40px 0;
+}
 .fotos img {
   border-radius: 10px;
   height: 100%;
@@ -114,7 +128,7 @@ body {
 
 /* ======== CONTATO ======== */
 .contact {
-  background: #000;
+  background:   #312f2f;
   color: #fff;
 }
 .contact .btn-primary {
