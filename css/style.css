@@ -32,7 +32,7 @@ body {
 
 /* ======== INÍCIO (HERO) ======== */
 #inicio {
-  background-image: url("/pavanelli/fotos/porshe-azul-bebe.jpeg");
+  background-image: url("../fotos/porshe-azul-bebe.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
