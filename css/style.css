@@ -77,10 +77,10 @@ body {
 
 /* ======== SOBRE ======== */
 .sobre {
-  background: #2b2b2b;
+  background: linear-gradient(to bottom,  #0066ff 70%,#00bfff);
 }
 .sobre h1 {
-  color: #0080ff;
+  color: #e0e0e0;
   font-weight: 800;
 }
 .sobre h2 {
@@ -90,22 +90,22 @@ body {
 }
 .sobre img {
   border-radius: 15px;
-  box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* ======== SERVIÇOS ======== */
 .servicos {
-  background: #2b2b2b;
+  background: linear-gradient(to bottom,  #00bfff ,  #0066ff 35%);
 }
 .servicos h1 {
-  color:#0080ff;
+  color: #dbdfe0;
   font-weight: 800;
 }
 .servicos .card {
   color: #fff;
   background-color: #0066ff;
   border: none;
-  box-shadow: 0px 5px 17px  rgba(1, 60, 94, 0.25);
+  box-shadow: 0px 5px 17px rgba(1, 60, 94, 0.25);
   transition: 0.4s;
 }
 .servicos .card:hover {
@@ -114,13 +114,13 @@ body {
 }
 
 /* ======== GALERIA ======== */
-.fotos h1 {
 
-  color: #0080ff;
+.fotos h1 {
+  color: #e0e0e0;
   font-weight: 800;
 }
 .fotos {
-  background:  #2b2b2b;
+  background: linear-gradient(to bottom, #0066ff 20%,  #00bfff ,  #0066ff);
   padding: 40px 0;
 }
 .fotos img {
@@ -132,12 +132,12 @@ body {
 }
 .fotos img:hover {
   transform: scale(1.03);
-  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* ======== CONTATO ======== */
 .contact {
-  background:   #312f2f;
+  background: linear-gradient(to right, #0066ff 15%, #00bfff);
   color: #e0e0e0;
 }
 .contact .btn-primary {
@@ -168,16 +168,15 @@ body {
 /* Tornar o botão maior, fixo e com animação */
 .whatsApp {
   position: relative; /* fixa na tela */
-  bottom: 20px;    /* distância do rodapé */
-  z-index: 1000;  /* fica acima de outros elementos */
+  bottom: 20px; /* distância do rodapé */
+  z-index: 1000; /* fica acima de outros elementos */
 }
 
 /* Efeito ao passar o mouse */
 .whatsApp a:hover {
-  background-color: transparent;       /* fica transparente */
+  background-color: transparent; /* fica transparente */
   border-color: #ffffff; /* cresce um pouco */
 }
-
 
 .cta {
   padding: 16.25rem 0; /* Area de visualização */
@@ -232,8 +231,3 @@ body {
   z-index: 0; /* 🔥 manda o fundo pra trás */
   opacity: 0.65; /* opcional: deixa o fundo mais elegante */
 }
-
-
-
-
-
