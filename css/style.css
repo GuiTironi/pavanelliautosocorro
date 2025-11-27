@@ -32,7 +32,7 @@ body {
 
 /* ======== INÍCIO (HERO) ======== */
 #inicio {
-  background-image: url("/pavanelli/fotos/pavanelli1.jpeg");
+  background-image: url("fotos/pavanelli1.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -223,3 +223,4 @@ body {
   z-index: 0; /* 🔥 manda o fundo pra trás */
   opacity: 0.65; /* opcional: deixa o fundo mais elegante */
 }
+
