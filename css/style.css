@@ -32,7 +32,7 @@ body {
 
 /* ======== INÍCIO (HERO) ======== */
 #inicio {
-  background-image: url("fotos/pavanelli-porshe-azul-bebe.jpeg");
+  background-image: url(fotos/porshe-azul-bebe.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -223,6 +223,7 @@ body {
   z-index: 0; /* 🔥 manda o fundo pra trás */
   opacity: 0.65; /* opcional: deixa o fundo mais elegante */
 }
+
 
 
 
