@@ -77,10 +77,10 @@ body {
 
 /* ======== SOBRE ======== */
 .sobre {
-  background: #004dc0;
+  background: #2b2b2b;
 }
 .sobre h1 {
-  color: #e0e0e0;
+  color: #0080ff;
   font-weight: 800;
 }
 .sobre h2 {
@@ -90,23 +90,23 @@ body {
 }
 .sobre img {
   border-radius: 15px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
 }
 
 /* ======== SERVIÇOS ======== */
 .servicos {
-  background: #004dc0;
+  background: #2b2b2b;
 }
 .servicos h1 {
-  color: #dbdfe0;
+  color:#0080ff;
   font-weight: 800;
 }
 .servicos .card {
-  color: #fff;
   background-color: #0066ff;
   border: none;
-  box-shadow: 0px 5px 17px rgba(1, 60, 94, 0.25);
+  box-shadow: 0px 5px 17px  rgba(1, 60, 94, 0.25);
   transition: 0.4s;
+  color: #e0e0e0;
 }
 .servicos .card:hover {
   transform: translateY(-7px);
@@ -114,13 +114,13 @@ body {
 }
 
 /* ======== GALERIA ======== */
-
 .fotos h1 {
-  color: #e0e0e0;
+
+  color: #0080ff;
   font-weight: 800;
 }
 .fotos {
-  background: #004dc0;
+  background:  #2b2b2b;
   padding: 40px 0;
 }
 .fotos img {
@@ -132,12 +132,12 @@ body {
 }
 .fotos img:hover {
   transform: scale(1.03);
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
 }
 
 /* ======== CONTATO ======== */
 .contact {
-  background:linear-gradient(to bottom, #004dc0 30%, #00bfff);
+  background:#312f2f;
   color: #e0e0e0;
 }
 .contact .btn-primary {
@@ -168,15 +168,16 @@ body {
 /* Tornar o botão maior, fixo e com animação */
 .whatsApp {
   position: relative; /* fixa na tela */
-  bottom: 20px; /* distância do rodapé */
-  z-index: 1000; /* fica acima de outros elementos */
+  bottom: 20px;    /* distância do rodapé */
+  z-index: 1000;  /* fica acima de outros elementos */
 }
 
 /* Efeito ao passar o mouse */
 .whatsApp a:hover {
-  background-color: transparent; /* fica transparente */
+  background-color: transparent;       /* fica transparente */
   border-color: #ffffff; /* cresce um pouco */
 }
+
 
 .cta {
   padding: 16.25rem 0; /* Area de visualização */
@@ -231,3 +232,5 @@ body {
   z-index: 0; /* 🔥 manda o fundo pra trás */
   opacity: 0.65; /* opcional: deixa o fundo mais elegante */
 }
+
+
