@@ -165,19 +165,48 @@ body {
   }
 }
 
-/* Tornar o botão maior, fixo e com animação */
-.whatsApp {
-  position: relative; /* fixa na tela */
-  bottom: 20px;    /* distância do rodapé */
-  z-index: 1000;  /* fica acima de outros elementos */
+/* ===== BOTÕES DE CONTATO (WHATS & INSTA) ===== */
+
+/* ===== BOTÕES DE CONTATO (WHATS & INSTA) ===== */
+.btn-whatsapp,
+.btn-instagram {
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    color: #fff;
 }
 
-/* Efeito ao passar o mouse */
-.whatsApp a:hover {
-  background-color: transparent;       /* fica transparente */
-  border-color: #ffffff; /* cresce um pouco */
+.social-buttons a {
+    margin: 0 20px; /* espaço entre os botões */
 }
 
+/* Fundo WhatsApp */
+.btn-whatsapp {
+    background: #25d366;
+}
+
+/* Fundo Instagram (gradiente) */
+.btn-instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+/* Hover – ambos */
+.btn-whatsapp:hover,
+.btn-instagram:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(22, 21, 21, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Hover específico para o Instagram – deixa o fundo transparente */
+.btn-whatsapp:hover, .btn-instagram:hover {
+    background: transparent;
+    color: #fff; /* mantém o texto branco */
+    border: 2px solid #fff; /* opcional: deixa uma borda visível */
+}
 
 .cta {
   padding: 16.25rem 0; /* Area de visualização */
