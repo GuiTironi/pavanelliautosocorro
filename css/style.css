@@ -77,7 +77,7 @@ body {
 
 /* ======== SOBRE ======== */
 .sobre {
-  background: linear-gradient(to bottom,  #0066ff 70%,#00bfff);
+  background: #004dc0;
 }
 .sobre h1 {
   color: #e0e0e0;
@@ -95,7 +95,7 @@ body {
 
 /* ======== SERVIÇOS ======== */
 .servicos {
-  background: linear-gradient(to bottom,  #00bfff ,  #0066ff 35%);
+  background: #004dc0;
 }
 .servicos h1 {
   color: #dbdfe0;
@@ -120,7 +120,7 @@ body {
   font-weight: 800;
 }
 .fotos {
-  background: linear-gradient(to bottom, #0066ff 20%,  #00bfff ,  #0066ff);
+  background: #004dc0;
   padding: 40px 0;
 }
 .fotos img {
@@ -137,7 +137,7 @@ body {
 
 /* ======== CONTATO ======== */
 .contact {
-  background: linear-gradient(to right, #0066ff 15%, #00bfff);
+  background:linear-gradient(to bottom, #004dc0 30%, #00bfff);
   color: #e0e0e0;
 }
 .contact .btn-primary {
