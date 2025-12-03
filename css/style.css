@@ -262,4 +262,7 @@ body {
   opacity: 0.65; /* opcional: deixa o fundo mais elegante */
 }
 
-
+.observacao {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
