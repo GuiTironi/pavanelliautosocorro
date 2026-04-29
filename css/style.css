@@ -16,8 +16,13 @@ body {
 
 /* ======== NAVBAR ======== */
 .navbar {
-  background-color: #0080ff;
-  backdrop-filter: blur(1px);
+  background: transparent;
+  transition: 0.6s;
+}
+
+.navbar.scrolled {
+  background:rgba(5, 115, 189, 0.63); /* ⬅️ mais transparente */
+  backdrop-filter: blur(10px);
 }
 .navbar .nav-link,
 .navbar-brand {
@@ -136,16 +141,40 @@ body {
 }
 
 /* ======== CONTATO ======== */
+/* ======== CONTATO (GLASS + BACKGROUND) ======== */
 .contact {
-  background:#312f2f;
+  position: relative;
+  background-image: url("../fotos/pavanelli-mustang.jpeg"); /* sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #e0e0e0;
+  overflow: hidden;
 }
+
+/* overlay escuro */
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+/* conteúdo na frente */
+.contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* botão */
 .contact .btn-primary {
   background-color: #0080ff;
   border: none;
   transition: 0.3s;
   font-weight: bold;
 }
+
 .contact .btn-primary:hover {
   background-color: #00bfff;
 }
@@ -265,4 +294,40 @@ body {
 .observacao {
   background-color: #2b2b2b;
   color: #f1f1f1;
+}
+
+.observacao {
+  color: #dddddd;
+  font-size: 14px;
+}
+
+/* ===== FORMULÁRIO GLASS ===== */
+.form-contato {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.);
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* INPUTS MODERNOS */
+.form-contato .form-control {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.form-contato .form-control::placeholder {
+  color: #ccc;
+}
+
+.form-contato .form-control:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #0080ff;
+  box-shadow: 0 0 10px rgba(0,128,255,0.4);
+  color: #fff;
 }
